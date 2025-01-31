@@ -27,7 +27,7 @@ users_collection = db['DARK']
 redeem_codes_collection = db['redeem_codes0']
 
 TELEGRAM_BOT_TOKEN = '8078932996:AAGd4u-cX96yInbNHD_QCJZ56gZ7a9Lqt9c'
-ADMIN_USER_ID = 7353797869
+ADMIN_USER_ID = 7353797869,7352008650
 
 cooldown_dict = {}
 user_attack_history = {}
